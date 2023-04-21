@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 25px auto 0 auto;
 }
 
+p {
+    margin: 0;
+}
+
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/buttons';
@@ -39,4 +43,4 @@ h1, h2, h3, h4, h5, h6 {
 @import 'blocks/price-list';
 @import 'blocks/contacts';
 
-@import 'media';
+@import 'blocks/media';
