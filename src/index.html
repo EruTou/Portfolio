@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Александра Смит - Портфолио</title>
 
-    <meta name="title" content="Мое портфолио">
+    <meta name="title" content="Александра Смит - Портфолио">
     <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://metatags.io/">
-    <meta property="og:title" content="Мое портфолио">
+    <meta property="og:title" content="Александра Смит - Портфолио">
     <meta property="og:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <meta property="og:image" content="img/main_bg.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://metatags.io/">
     <meta property="twitter:title" content="Мое портфолио">
     <meta property="twitter:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <meta property="twitter:image" content="img/main_bg.jpg">
 
     <!-- Favicon  -->
     <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
@@ -516,11 +516,15 @@
         </div>
     </section>
 
-    <!-- <section class="contacts">
+    <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
-                    <img src="img/photo.jpg" alt="photo">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/photo-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/photo.jpg">
+                        <img src="img/photo.jpg" alt="photo">
+                    </picture>
                 </div>
                 <div class="contacts__descr">
                     <h2 class="title title_fz16 title__section-title_left">Контакты</h2>
@@ -552,14 +556,18 @@
                             <textarea name="message" id="message" cols="30" rows="10"></textarea>
                             <label for="message">Ваше сообщение</label>
                         </div>
-                        <div>
+                        <div class="contacts__submit">
                             <button type="submit" class="contacts__btn btn">Отправить сообщение</button>
+                        </div>
+                        <div class="contacts__policy">
+                            <input type="checkbox" required>
+                            <span>Я согласен(а) с <a href="#">политикой конфидециальности</a></span>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <script src="js/script.js"></script>
 </body>
