@@ -235,15 +235,15 @@
     }
     .skills {
         &__items {
-            grid-template: repeat(7,minmax(270px,auto)) / 1fr;
-            grid-auto-rows: minmax(270,auto);
+            grid-template: repeat(7,minmax(270px,auto)) / 300px;
+            grid-auto-rows: minmax(270, auto);
+            padding: 0;
+            column-gap: 0;
             row-gap: 20px;
         }
         &__progress {
-            grid-template: repeat(2,minmax(70px,auto)) / 1fr;
-            &-item {
-                grid-template: minmax(21px,auto) 14px/200px 35px;
-            }
+            grid-template-columns: repeat(auto-fit, 300px);
+            grid-auto-rows: minmax(70px, auto);
             row-gap: 40px;
         }
     }
