@@ -51,6 +51,15 @@
             }
         }
     }
+    .contacts {
+        &__wrapper {
+            padding: 0 15px 0 30px;
+            grid-template-columns: 400px 500px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2,237px);
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -117,6 +126,22 @@
             grid-template-columns: repeat(auto-fit, 330px);
             grid-auto-rows: minmax(45px, auto);
             justify-content: space-between;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 300px 380px;
+        }
+        &__form {
+            grid-template: 45px 190px/repeat(2,177px);
+        }
+        &__btn {
+            padding: 4px 25px;
+            line-height: 18px;
+        }
+        &__policy {
+            font-size: 12px;
         }
     }
 }
@@ -207,6 +232,25 @@
             margin-top: 40px;
             justify-content: center;
             row-gap: 20px;
+        }
+    }
+    .contacts {
+        padding-top: 46px;
+        .divider {
+            margin: 15px 0 0 0;
+        }
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 1fr;
+        }
+        &__photo {
+            display: none;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
+        &__btn {
+            padding: 12px 25px;
         }
     }
 }
@@ -303,6 +347,35 @@
     .price-list {
         &__items {
             grid-template-columns: repeat(auto-fit, 300px);
+        }
+    }
+    .contacts {
+        padding-bottom: 50px;
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__input {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__submit {
+            order: 5;
+            justify-self: center;
+        }
+        &__btn {
+            justify-self: center;
+            padding: 12px 25px;
+            margin: 0 auto;
+            max-width: 225px;
+        }
+        &__policy {
+            width: 200px;
+            margin: 0 auto;
+            line-height: 18px;
         }
     }
 }
