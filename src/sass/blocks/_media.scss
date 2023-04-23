@@ -39,6 +39,18 @@
             grid-template: repeat(2,minmax(70px,auto))/repeat(3,300px);
         }
     }
+    .portfolio {
+        &__wrapper {
+            grid-template: repeat(2, 280px) / repeat(3, 280px);
+            grid-auto-rows: 280px;
+            justify-content: center;
+            gap: 20px;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -94,6 +106,19 @@
             column-gap: 55px;
         }
     }
+    .portfolio {
+        &__wrapper {
+            grid-template: repeat(3, 280px) / repeat(2, 280px);
+        }
+    }
+    .price-list {
+        &__items {
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, 330px);
+            grid-auto-rows: minmax(45px, auto);
+            justify-content: space-between;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -106,7 +131,7 @@
         }
     }
     .divider {
-        margin: 5px auto 0 auto;
+        margin: 15px auto 0 auto;
     }
     .promo {
         background: url('../img/main_bg.jpg') no-repeat 57%/cover;
@@ -135,7 +160,7 @@
         }
     }
     .benefit {
-        padding-top: 40px;
+        padding-top: 46px;
         &__wrapper {
             grid-template-columns: 410px;
             grid-auto-rows: minmax(380px, auto);
@@ -148,7 +173,7 @@
         }
     }
     .skills {
-        padding-top: 40px;
+        padding-top: 46px;
         &__items {
             grid-template: repeat(4,minmax(305px,auto))/repeat(2,255px);
             grid-auto-rows: minmax(305px,auto);
@@ -161,6 +186,27 @@
             &-item {
                 grid-template: minmax(21px,auto) 14px/200px 35px;
             }
+        }
+    }
+    .portfolio {
+        padding-top: 46px;
+        &__wrapper {
+            margin-top: 40px;
+            grid-template: repeat(3, 260px) / repeat(2, 260px);
+            grid-auto-rows: 260px;
+            gap: 15px;
+        }
+    }
+    .price-list {
+        .divider {
+            margin-top: 20px;
+        }
+        padding-top: 46px;
+        &__items {
+            grid-template-columns: repeat(auto-fit, 390px);
+            margin-top: 40px;
+            justify-content: center;
+            row-gap: 20px;
         }
     }
 }
@@ -245,6 +291,18 @@
             grid-template-columns: repeat(auto-fit, 300px);
             grid-auto-rows: minmax(70px, auto);
             row-gap: 40px;
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            grid-template: repeat(6, 280px) / 280px;
+            grid-auto-rows: 280px;
+            row-gap: 20px;
+        }
+    }
+    .price-list {
+        &__items {
+            grid-template-columns: repeat(auto-fit, 300px);
         }
     }
 }
