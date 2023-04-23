@@ -13,6 +13,7 @@
         position: relative;
         display: grid;
         grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
+        grid-auto-rows: minmax(21px, auto);
         row-gap: 5px;
         padding-left: 25px;
             &::before {
@@ -35,7 +36,7 @@
         &-text {
             grid-column: 1 / 3;
             width: 100%;
-            height: 18px;
+            min-height: 18px;
             margin-top: 0;
             margin-bottom: 0;
             font-size: 12px;
